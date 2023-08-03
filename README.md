@@ -2,7 +2,7 @@
  Week-3-M3-D4
     <!--
         1) NavBar - collegare sezioni
-        2) Aggiungi un logo alla navbar, una qualsiasi immagine
+        2) Aggiungi un logo alla navbar, una qualsiasi immagine [DONE]
         3) Aggiungi una sezione Jumbotron con il nome e il payoff dell'agenzia
         4) Impementa la sezione "Offerta della settimana". Qui mostrerari 4 destinazione:
             -4 card per linea a schermo grande
