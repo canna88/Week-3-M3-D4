@@ -15,8 +15,8 @@
         6) Implementa la sezione "Offerta del giorno". Qui avrai_
             - 66% immagine lugo destinazione
             - 33% dedicato al nome, date, prezzo e breve descrizione luogo
-        7) Rendi invisibile la sezione "Offerta del giorno" su schermi mobile 
-        8) Aggingi nella sezione "Welcome Summer" un'ombra ad ogni card
+        7) Rendi invisibile la sezione "Offerta del giorno" su schermi mobile [DONE]
+        8) Aggingi nella sezione "Welcome Summer" un'ombra ad ogni card [DONE]
         9) Crea una sezione last minute in cui mostrerai le immagini delle destinazioni last minute sotto forma di card
         10) crea una sezione "Testimonial", dove l'utente potrà alcuni feedback fittizi
         11) Crea un footer con le informazioni dell'agenzia e un bottone contattaci
