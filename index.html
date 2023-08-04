@@ -11,8 +11,10 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <style>
+
+        
         body {
-            background-color: rgb(81, 144, 238);
+            background-color: white;
         }
 
         #jumbotron h1, #jumbotron p {
@@ -23,9 +25,14 @@
             color: grey;
         }
 
-        section {
-            /*border-top: 2px solid #ccc;*/
-            border: 1px solid black;
+        nav {
+            border-bottom: 10px solid #e7d802;
+        }
+
+        section:not(#jumbotron) {
+            border-top: 10px solid #e7d802;
+            padding-top: 20px;
+            margin-bottom: 50px;
         }
 
         #week-offers, #welcome-summer {
@@ -40,30 +47,35 @@
             font-weight: bold;
             color: gray;
             font-size: medium;
-    
-        }
-
-        #daily-offer {
-            border: 3px solid darkblue;
-            border-radius: 20px;
         }
 
         .card img {
             border-radius: 10px;
         }
+
         .card:hover {
             box-shadow: 0 0 5px darkblue;
             cursor: pointer ;
         }
-        #last-minute .card-img-overlay:hover {
-            
-            border: 5px solid darkblue;
+
+        #last-minute .card-img-overlay:hover  {
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.99));
             color: white;
+            
         }
 
-        #last-minute .card-img-overlay:hover h1,h4 {
-            font-weight: bold;
+        #last-minute .card-img-overlay:hover h1,#last-minute .card-img-overlay:hover h4 {
+            color: white;
+            font-weight: bold;  
+        }
+
+        #last-minute h4 {
+            color: black;
+        }
+
+
+        #last-minute .card-img-overlay:hover .card-img {
+            display: none; 
         }
 
         #last-minute div {
@@ -75,7 +87,6 @@
         }
         
         #daily-offer:hover {
-            box-shadow: 0 0 5px darkblue;
             cursor: pointer;
         }
 
@@ -96,6 +107,30 @@
             font-weight: bold;
             font-size: larger;
         }
+
+        #testimonial {
+            background-color: rgba(233,236,239);
+        }
+
+        footer{
+            border-top: 10px solid #e7d802;
+            background-color: rgba(0, 123, 255);
+            color:white
+        }
+
+        footer a {
+            color:white
+        }
+
+        footer a:hover {
+            color: darkblue
+        }
+
+        footer a:first-of-type:hover {
+            color: white;
+            cursor:default;
+        }
+
     </style>
 
     <title>BooKstrap.com</title>
@@ -305,12 +340,18 @@
 
     </section>
 
-    <section id="daily-offer" style="border: 1px solid black;">
+    <section id="daily-offer" class = "d-none d-sm-block">
         <div class="container">
+            <div class="row">
+                <h2 class="section-title col-12">Offerta del giorno</h2>
+            </div>
+            <div class="row">
+                <h4 class="section-subtitle col-12">Valida solo per oggi!</h4>
+            </div>
             <div class="media row py-4">
 
-                <img class="col-4" src="https://picsum.photos/300?random=11" class="align-self-center mr-3" alt="...">
-                <div class="media-body col-8">
+                <img class="col-12  col-sm-4 align-self-center mr-3" src="https://picsum.photos/300?random=11" alt="...">
+                <div class="media-body col-12 col-sm-8 mt-5">
                     <h3 class="mt-0">Katmandu, Nepal</h3>
                     <p>Scopri l'offerta last minute per un'indimenticabile avventura a Katmandu! Esplora le antiche
                         strade di questa affascinante città, immergiti nella cultura nepalese e vivi emozioni uniche
@@ -323,10 +364,15 @@
         </div>
     </section>
 
-    <section id="last-minute" style="border: 1px solid black;">
+    <section id="last-minute">
         <div class="container">
+
+            <div class="row mb-4">
+                <h2 class="section-title col-12">Tutte le nostre occasioni Last-Minute</h2>
+            </div>
+
             <div class="row d-flex justify-content-between">
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=12" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Parigi</h1>
@@ -335,7 +381,7 @@
                     </div>
                 </div>
 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=13" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Madrid</h1>
@@ -344,16 +390,16 @@
                     </div>
                 </div>
 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
-                    <img src="https://picsum.photos/300?random=14" class="card-img" alt="...">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
+                    <img src="https://picsum.photos/300?random=1" class="card-img" alt="...">
                     <div class="card-img-overlay">
-                        <h1 class="card-title">Amsterdam</h1>
+                        <h1 class="card-title">Utrect</h1>
                         <h4 class="card-title">Olanda</h4>
 
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=15" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Barcellona</h1>
@@ -362,7 +408,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=16" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Varsavia</h1>
@@ -371,7 +417,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=17" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Mosca</h1>
@@ -380,7 +426,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=18" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Vienna</h1>
@@ -389,7 +435,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=19" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Dublino</h1>
@@ -398,7 +444,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=20" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Tokio</h1>
@@ -407,7 +453,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=21" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Taipei</h1>
@@ -416,7 +462,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=22" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">Sidney</h1>
@@ -425,7 +471,7 @@
                     </div>
                 </div>
                 
-                <div class="card bg-dark text-white text-center col-12 col-sm-6 col-lg-3">
+                <div class="card text-white text-center col-12 col-sm-6 col-lg-3 p-0">
                     <img src="https://picsum.photos/300?random=23" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h1 class="card-title">New York</h1>
@@ -438,16 +484,18 @@
         </div>
     </section>
 
-    <section id="testimonial" class="py-4" style="border: 1px solid black;min-height: 200px;">
+    <section id="testimonial" class="py-4" style="min-height: 200px;">
+
+
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel"
             style="height: 100%;min-height: 200px;">
             <div class="carousel-inner">
 
-                <div class="carousel-item text-center active" data-interval="5000" style="height: 100%;">
+                <div class="carousel-item text-center active" data-interval="2000" style="height: 100%;">
                     <div class="media row">
                         <div class="col-12 col-sm-2 "></div>
                         <img src="https://picsum.photos/300/300?random=23"
-                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5" alt="...">
+                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5 mb-sm-0" alt="...">
 
                         <div class="media-body col-12 col-sm-6">
                             <h3 class="mt-0">Elena Rossi</h3>
@@ -461,11 +509,11 @@
                     </div>
                 </div>
 
-                <div class="carousel-item text-center" data-interval="500" style="height: 100%;">
+                <div class="carousel-item text-center" data-interval="2000" style="height: 100%;">
                     <div class="media row">
                         <div class="col-12 col-sm-2 "></div>
                         <img src="https://picsum.photos/300/300?random=24"
-                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5" alt="...">
+                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5 mb-sm-0" alt="...">
 
                         <div class="media-body col-12 col-sm-6">
                             <h3 class="mt-0">Marco Hernandez</h3>
@@ -480,11 +528,11 @@
                     </div>
                 </div>
 
-                <div class="carousel-item text-center" data-interval="500">
+                <div class="carousel-item text-center" data-interval="2000">
                     <div class="media row">
                         <div class="col-12 col-sm-2 "></div>
                         <img src="https://picsum.photos/300/300?random=25"
-                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5" alt="...">
+                            class="align-self-center mr-3 col-12 col-sm-2 rounded-circle mb-5 mb-sm-0" alt="...">
 
                         <div class="media-body col-12 col-sm-6">
                             <h3 class="mt-0">Sofia Patel</h3>
@@ -510,6 +558,17 @@
             </button>
         </div>
     </section>
+    <footer class="nav justify-content-center">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <a class="col-12 col-sm-6 nav-link text-center" href="#">Bookstrap.com srl - Via Roma, 2 - Perugia - Italia</a>
+                <a class="col-12 col-sm-6 nav-link text-center" href="#">Contattaci</a>
+            </div>
+        </div>
+
+    </footer>
+
+
 
 
 
