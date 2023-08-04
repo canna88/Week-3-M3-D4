@@ -43,7 +43,7 @@
     
         }
 
-        .card {
+        #daily-offer {
             border: 3px solid darkblue;
             border-radius: 20px;
         }
@@ -72,6 +72,29 @@
 
         #last-minute .card {
             border-radius: 10px;
+        }
+        
+        #daily-offer:hover {
+            box-shadow: 0 0 5px darkblue;
+            cursor: pointer;
+        }
+
+
+        #daily-offer h3 {
+            font-weight: bold;
+        }
+
+        #daily-offer img {
+            border-radius: 20px;
+        }
+
+        #daily-offer p {
+            font-size: large;
+        }
+
+        #daily-offer p span {
+            font-weight: bold;
+            font-size: larger;
         }
     </style>
 
@@ -284,9 +307,19 @@
 
     <section id="daily-offer" style="border: 1px solid black;">
         <div class="container">
-            <div class="row">
-                DAILY OFFER
+            <div class="media row py-4">
+
+                <img class="col-4" src="https://picsum.photos/300" class="align-self-center mr-3" alt="...">
+                <div class="media-body col-8">
+                    <h3 class="mt-0">Katmandu, Nepal</h3>
+                    <p>Scopri l'offerta last minute per un'indimenticabile avventura a Katmandu! Esplora le antiche
+                        strade di questa affascinante città, immergiti nella cultura nepalese e vivi emozioni uniche
+                        tra maestose montagne e incantevoli templi.</p>
+                    <p class="mb-0"><strong>Date:</strong> dal 15 agosto al 30 agosto</p>
+                    <p class="mb-0"><strong>Prezzo:</strong> <span class="text-danger">€ 999,00</span> a persona</p>
+                </div>
             </div>
+
         </div>
     </section>
 
