@@ -25,4 +25,5 @@
         - Altezza card
         - Posizione card con spazi
         - Gestione titolo con display 4-5-6 ecc -> perchè sul lato compare una barra
+        - Amsterdam a capo, come si risolve?
         -->
