@@ -20,6 +20,9 @@
         9) Crea una sezione last minute in cui mostrerai le immagini delle destinazioni last minute sotto forma di card
         10) crea una sezione "Testimonial", dove l'utente potrà alcuni feedback fittizi
         11) Crea un footer con le informazioni dell'agenzia e un bottone contattaci
-    
-    
-    -->
+        ----
+        Domande:
+        - Altezza card
+        - Posizione card con spazi
+        - Gestione titolo con display 4-5-6 ecc
+        -->
