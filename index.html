@@ -16,9 +16,15 @@
         }
 
         #daily-offer {
-            border: 2px solid darkblue;
+            border: 3px solid darkblue;
             border-radius: 20px;
         }
+
+        #daily-offer:hover {
+            box-shadow: 0 0 5px darkblue;
+            cursor: pointer;
+        }
+
 
         #daily-offer h3 {
             font-weight: bold;
@@ -28,8 +34,14 @@
             border-radius: 20px;
         }
 
+        #daily-offer p {
+            font-size: large;
+        }
 
-
+        #daily-offer p span {
+            font-weight: bold;
+            font-size: larger;
+        }
     </style>
 
     <title>BooKstrap.com</title>
@@ -98,25 +110,19 @@
 
     <section id="daily-offer" style="border: 1px solid black;">
         <div class="container">
-            <div class="row">
-                <div class="media row">
+            <div class="media row py-4">
 
-                    <img class="col-4"
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fb/4a/kathmandu.jpg?w=700&h=500&s=1"
-                        class="align-self-center mr-3" alt="...">
-                    <div class="media-body col-8">
-                        <h3 class="mt-0">Katmandu, Nepal</h3>
-                        <p>Scopri l'offerta last minute per un'indimenticabile avventura a Katmandu! Esplora le antiche
-                            strade di questa affascinante città, immergiti nella cultura nepalese e vivi emozioni uniche
-                            tra maestose montagne e incantevoli templi.</p>
-                        <!-- Paragrafo con stile per le date -->
-                        <p class="mb-0"><strong>Date:</strong> dal 15 agosto al 30 agosto</p>
-                        <!-- Paragrafo con stile per il prezzo -->
-                        <p class="mb-0"><strong>Prezzo:</strong> <span class="text-danger">€999</span> a persona</p>
-                    </div>
+                <img class="col-4" src="https://picsum.photos/300" class="align-self-center mr-3" alt="...">
+                <div class="media-body col-8">
+                    <h3 class="mt-0">Katmandu, Nepal</h3>
+                    <p>Scopri l'offerta last minute per un'indimenticabile avventura a Katmandu! Esplora le antiche
+                        strade di questa affascinante città, immergiti nella cultura nepalese e vivi emozioni uniche
+                        tra maestose montagne e incantevoli templi.</p>
+                    <p class="mb-0"><strong>Date:</strong> dal 15 agosto al 30 agosto</p>
+                    <p class="mb-0"><strong>Prezzo:</strong> <span class="text-danger">€ 999,00</span> a persona</p>
                 </div>
-
             </div>
+
         </div>
     </section>
 
