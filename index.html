@@ -11,9 +11,25 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <style>
-        body{
+        body {
             background-color: rgb(81, 144, 238);
         }
+
+        #daily-offer {
+            border: 2px solid darkblue;
+            border-radius: 20px;
+        }
+
+        #daily-offer h3 {
+            font-weight: bold;
+        }
+
+        #daily-offer img {
+            border-radius: 20px;
+        }
+
+
+
     </style>
 
     <title>BooKstrap.com</title>
@@ -54,7 +70,7 @@
         </div>
     </nav>
 
-    <section id="jumbotron" style="border: 1px solid black; height: 400px;">
+    <section id="jumbotron" style="border: 1px solid black;">
         <div class="container">
             <div class="row">
                 jumbotron
@@ -63,7 +79,7 @@
 
     </section>
 
-    <section id="week-offers" style="border: 1px solid black; height: 400px;">
+    <section id="week-offers" style="border: 1px solid black;">
         <div class="container">
             <div class="row">
                 WEEK OFFERS
@@ -72,18 +88,34 @@
 
     </section>
 
-    <section id="welcome-summer" style="border: 1px solid black; height: 400px;">
+    <section id="welcome-summer" style="border: 1px solid black;">
         <div class="container">
             <div class="row">
                 WELCOME SUMMER
             </div>
         </div>
     </section>
-    
-    <section id="daily-offer" style="border: 1px solid black; height: 400px;">
+
+    <section id="daily-offer" style="border: 1px solid black;">
         <div class="container">
             <div class="row">
-                DAILY OFFER
+                <div class="media row">
+
+                    <img class="col-4"
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fb/4a/kathmandu.jpg?w=700&h=500&s=1"
+                        class="align-self-center mr-3" alt="...">
+                    <div class="media-body col-8">
+                        <h3 class="mt-0">Katmandu, Nepal</h3>
+                        <p>Scopri l'offerta last minute per un'indimenticabile avventura a Katmandu! Esplora le antiche
+                            strade di questa affascinante città, immergiti nella cultura nepalese e vivi emozioni uniche
+                            tra maestose montagne e incantevoli templi.</p>
+                        <!-- Paragrafo con stile per le date -->
+                        <p class="mb-0"><strong>Date:</strong> dal 15 agosto al 30 agosto</p>
+                        <!-- Paragrafo con stile per il prezzo -->
+                        <p class="mb-0"><strong>Prezzo:</strong> <span class="text-danger">€999</span> a persona</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
